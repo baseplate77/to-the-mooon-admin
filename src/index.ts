@@ -215,7 +215,7 @@ const fetchTournament = async (id: string) => {
 
 const fetchToTheMooon = () => {
   //const toTheMooonAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-  const toTheMooonAddress = "0x9477Ae1FEA1e16fA954C246F6bDd0c10df57c338";
+  const toTheMooonAddress = "0x0720A5a185F71F4203a0217Bd8a32faa5C2A1528";
 
   const signer = getSigner();
 
