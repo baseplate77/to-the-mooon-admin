@@ -1,0 +1,300 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IToTheMooon",
+  "sourceName": "contracts/interfaces/IToTheMooon.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "player_",
+          "type": "address"
+        }
+      ],
+      "name": "addPlayerToTournament",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name_",
+          "type": "string"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "isSponsored",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "prizePool",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nWinners",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "sponsorMetadata",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commissionPercentage",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct DataTypes.RewardVars",
+          "name": "rewardVars_",
+          "type": "tuple"
+        }
+      ],
+      "name": "createTournament",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "player_",
+          "type": "address"
+        }
+      ],
+      "name": "getJoinedTournamentsByPlayer",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startTime",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "contractAddress",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "bool",
+                  "name": "isSponsored",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "prizePool",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "nWinners",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "string",
+                  "name": "sponsorMetadata",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "commissionPercentage",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct DataTypes.RewardVars",
+              "name": "rewardVars",
+              "type": "tuple"
+            }
+          ],
+          "internalType": "struct DataTypes.TournamentStruct[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wallet_",
+          "type": "address"
+        }
+      ],
+      "name": "getUserName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_wallet",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tournamentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "hasJoinedTournament",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "joiningFees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "r_values",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "joiningFees_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setJoiningFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "timeLimit_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTimeLimit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_strlen",
+          "type": "uint256"
+        }
+      ],
+      "name": "setUserName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "winnersPercentage",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
