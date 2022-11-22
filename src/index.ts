@@ -230,7 +230,7 @@ const fetchToTheMooon = () => {
 
 function getSigner() {
   //const rpcUrl = "http://127.0.0.1:8545/";
-  const rpcUrl = "https://rpc-mumbai.maticvigil.com";
+  const rpcUrl = "https://testnet.aurora.dev";
 
   //Hardhat ac 1
   // const privateKey =
